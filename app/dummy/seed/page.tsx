@@ -1,3 +1,5 @@
+// Esta página tem por Objetivo ir em uma API externa, pegar os dados de produto  convertê-lo num modelo que o Stripe aceita
+
 import stripe from "@/lib/stripe"
 import { DummyProduct } from "@/types"
 

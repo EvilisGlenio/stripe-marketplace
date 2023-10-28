@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useToast } from "@/components/ui/use-toast";
 
 
 interface ProductCardProps {
@@ -38,6 +39,8 @@ export default function ProductCard({
 
     const {addItem} = useShoppingCart()
 
+    const { toast } = useToast()
+
     const formattedPrice = formatCurrencyString({
       value: Number(price),
       currency,
@@ -53,6 +56,11 @@ export default function ProductCard({
         price: Number(price),
         currency,
         image,
+      })
+
+      toast({
+        title: `🎉 ${name} adicionado!`,
+        description: "Adcione mais, para ter desconto! "
       })
     }
 

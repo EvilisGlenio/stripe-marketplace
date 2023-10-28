@@ -3,6 +3,7 @@ import { Inter, Oxygen } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import Header from '@/components/Header'
+import { Toaster } from "@/components/ui/toaster"
 import AppCartProvider from '@/components/shop/AppCartProvider'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,11 +23,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(oxygen.className, "min-h-screen flex flex-col")}>
         <AppCartProvider>
-        <Header/>
-        <main className="flex-grow">
-        {children}
-        </main>
-        <footer>Meu Footer</footer>
+          <Header/>
+          <main className="flex-grow">
+          {children}
+          </main>
+          <Toaster />
+          <footer>Meu Footer</footer>
         </AppCartProvider>
       </body>
     </html>

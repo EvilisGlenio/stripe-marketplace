@@ -1,3 +1,23 @@
+# Nome do Seu Projeto
+
+![Logo do Seu Projeto](/stripe-marketplace-preview.jpeg)
+
+Descrição concisa do seu projeto. Adicione aqui uma breve visão geral do que o seu projeto faz e quais tecnologias foram usadas.
+
+## Índice
+
+- [Demonstração](#demonstração)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+
+## Demonstração
+
+Forneça uma demonstração ao vivo do seu projeto, se aplicável. Isso pode ser um link para a versão online, capturas de tela ou até mesmo um vídeo demonstrativo.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

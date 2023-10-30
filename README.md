@@ -1,6 +1,6 @@
 # Stripe Store
 
-![Logo do Seu Projeto](https://github.com/EvilisGlenio/stripe-marketplace/blob/main/public/stripe-marketplace-preview.jpeg)
+![Logo do Seu Projeto](https://github.com/EvilisGlenio/stripe-marketplace/blob/main/.github/preview.jpeg)
 
 A Stripe Store é um projeto em construção, que oferecerá uma plataforma de compras online para eletrônicos. Desenvolvida usando tecnologias modernas, a loja oferece uma experiência de compra conveniente e segura.
 

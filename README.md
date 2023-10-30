@@ -1,8 +1,8 @@
-# Stripe Marketplace
+# Stripe Store
 
 ![Logo do Seu Projeto](https://github.com/EvilisGlenio/stripe-marketplace/blob/main/public/stripe-marketplace-preview.jpeg)
 
-A Loja de Eletrônicos é um projeto em construção, que oferecerá uma plataforma de compras online para eletrônicos. Desenvolvida usando tecnologias modernas, a loja oferece uma experiência de compra conveniente e segura.
+A Stripe Store é um projeto em construção, que oferecerá uma plataforma de compras online para eletrônicos. Desenvolvida usando tecnologias modernas, a loja oferece uma experiência de compra conveniente e segura.
 
 ## Índice
 
@@ -17,7 +17,7 @@ A Loja de Eletrônicos é um projeto em construção, que oferecerá uma platafo
 
 ## Demonstração
 
-A Stripe Marketplace oferecerá aos clientes uma ampla gama de produtos eletrônicos de alta qualidade. Os usuários poderão navegar por uma seleção diversificada de smartphones, notebooks, MacBooks e iPhones, ver detalhes dos produtos e adicionar itens ao carrinho de compras. A integração com a API do Stripe Payments permite um processo de pagamento simples e seguro.
+A Stripe Store oferecerá aos clientes uma ampla gama de produtos eletrônicos de alta qualidade. Os usuários poderão navegar por uma seleção diversificada de smartphones, notebooks, MacBooks e iPhones, ver detalhes dos produtos e adicionar itens ao carrinho de compras. A integração com a API do Stripe Payments permite um processo de pagamento simples e seguro.
 
 Este projeto é desenvolvido com foco na usabilidade, desempenho e design atraente, proporcionando aos usuários uma experiência de compra eficiente e agradável.
 

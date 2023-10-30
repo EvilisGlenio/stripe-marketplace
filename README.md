@@ -1,6 +1,6 @@
 # Nome do Seu Projeto
 
-![Logo do Seu Projeto](/stripe-marketplace-preview.jpeg)
+![Logo do Seu Projeto](./stripe-marketplace-preview.jpeg)
 
 Descrição concisa do seu projeto. Adicione aqui uma breve visão geral do que o seu projeto faz e quais tecnologias foram usadas.
 

@@ -24,17 +24,19 @@ export default function Cart() {
     // Também é possível guardar as informações atravéz do Prisma
     async function checkout() {
         setIsCheckingOut(true)
+      
         const response = await fetch("/api/checkout", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(cartDetails)
+            body: JSON.stringify(cartDetails),
         });
 
         const { id } = await response.json()
 
         const result = await redirectToCheckout(id)
+
         setIsCheckingOut(false)
     }
 

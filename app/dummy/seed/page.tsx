@@ -5,7 +5,7 @@ import { DummyProduct } from "@/types"
 
 //Nessa função, são retirados alguns produtos da API Dummy, e transformados em um formato que o Stripe entenda.
 export async function getDummyProducts(page: number){
-    const response = await fetch("https://dummyjson.com/products?")
+    const response = await fetch("https://dummyjson.com/products?limit=12")
     const dummyData = await response.json()
     const products = dummyData.products.map((product: DummyProduct) => {
         return {

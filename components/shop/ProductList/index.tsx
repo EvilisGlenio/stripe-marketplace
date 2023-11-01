@@ -9,7 +9,7 @@ async function getProducts() {
     try {
         
         const stripeProducts = await stripe.products.list({
-            limit: 10,
+            limit: 8,
             expand: ["data.default_price"]
         })
 

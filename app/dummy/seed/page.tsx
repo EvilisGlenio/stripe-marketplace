@@ -3,8 +3,9 @@
 import stripe from "@/lib/stripe"
 import { DummyProduct } from "@/types"
 
-async function getDummyProducts(){
-    const response = await fetch("https://dummyjson.com/products?limit=10")
+//Nessa função, são retirados alguns produtos da API Dummy, e transformados em um formato que o Stripe entenda.
+export async function getDummyProducts(page: number){
+    const response = await fetch("https://dummyjson.com/products?")
     const dummyData = await response.json()
     const products = dummyData.products.map((product: DummyProduct) => {
         return {
@@ -21,8 +22,9 @@ async function getDummyProducts(){
     return products
 }
 
+//Nessa função, a lista de produtos retirada da API e convertida, é usada para criar os produtos dentro do Stripe.
 async function seedDummyData(){
-    const products = await getDummyProducts()
+    const products = await getDummyProducts(1)
     await products.map(async (product: any) => {
         try {
             const productCreated = await stripe.products.create(product)
@@ -33,6 +35,7 @@ async function seedDummyData(){
     })
 }
 
+//
 export default async function Seed(){
     await seedDummyData()
     return(<div className="container flex items-center justify-center my-10">

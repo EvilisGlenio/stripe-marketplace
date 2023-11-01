@@ -28,7 +28,6 @@ export default function RootLayout({
           {children}
           </main>
           <Toaster />
-          <footer>Meu Footer</footer>
         </AppCartProvider>
       </body>
     </html>

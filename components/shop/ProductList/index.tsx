@@ -4,12 +4,13 @@ import stripe from "@/lib/stripe"
 import { Product } from "@/types"
 import Stripe from "stripe"
 import ProductCard from "@/components/shop/ProductCard"
+import { LoadMore } from "@/components/ui/load-more"
 
 async function getProducts() {
     try {
         
         const stripeProducts = await stripe.products.list({
-            limit: 10,
+            limit: 8,
             expand: ["data.default_price"]
         })
 
@@ -27,10 +28,13 @@ async function getProducts() {
 
     } catch (error) {
         console.log(error)
+        
     }
 }
 
 export default async function ProductList() {
+
+
     const products = await getProducts()
     return (<>
     <section className="grid gap-4 m-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -40,5 +44,6 @@ export default async function ProductList() {
             ))
         }
     </section>
+    <LoadMore />
     </>)
 }

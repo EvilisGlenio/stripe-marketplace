@@ -1,5 +1,5 @@
 import ProductList from '@/components/shop/ProductList'
-import Image from 'next/image'
+import { Spinner } from '@/components/ui/spinner'
 
 export default function Home() {
   return (

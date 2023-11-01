@@ -25,7 +25,7 @@ export default function Cart() {
     async function checkout() {
         setIsCheckingOut(true)
       
-        const response = await fetch("/api/checkout", {
+        const response = await fetch("./api/checkout", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

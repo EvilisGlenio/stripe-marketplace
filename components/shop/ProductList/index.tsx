@@ -4,6 +4,7 @@ import stripe from "@/lib/stripe"
 import { Product } from "@/types"
 import Stripe from "stripe"
 import ProductCard from "@/components/shop/ProductCard"
+import { Spinner } from "@/components/ui/spinner"
 
 async function getProducts() {
     try {
@@ -40,5 +41,6 @@ export default async function ProductList() {
             ))
         }
     </section>
+    <div className='w-screen flex justify-center items-center'><Spinner/></div>
     </>)
 }

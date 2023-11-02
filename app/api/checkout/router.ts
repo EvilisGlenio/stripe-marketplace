@@ -6,7 +6,6 @@ import { Product } from "use-shopping-cart/core";
 
 export async function POST(request: NextRequest){
 
-console.log("check..")
     const cartDetails = await request.json()
     const baseUrl = request.headers.get("origen")
 

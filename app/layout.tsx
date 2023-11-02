@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import Header from '@/components/Header'
 import { Toaster } from "@/components/ui/toaster"
 import AppCartProvider from '@/components/shop/AppCartProvider'
+import { Spinner } from '@/components/ui/spinner'
 
 const inter = Inter({ subsets: ['latin'] })
 const oxygen = Oxygen({weight: ['300', '400', '700'], subsets: ['latin']})
@@ -28,7 +29,6 @@ export default function RootLayout({
           {children}
           </main>
           <Toaster />
-          <footer>Meu Footer</footer>
         </AppCartProvider>
       </body>
     </html>
